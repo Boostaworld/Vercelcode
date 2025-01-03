@@ -62,6 +62,12 @@ const FeaturesData: Feature[] = [
     description:
       "Your order will be delivered in just around 30 seconds after placement, thanks to our ultra-fast automatic delivery system.",
   },
+  {
+    icon: <WorkflowIcon size={30} className="text-purple-400" />,
+    title: "testing feature adding",
+    description:
+      "Seeing if i can add new features easily",
+  },
 ];
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ feature, index }) => {

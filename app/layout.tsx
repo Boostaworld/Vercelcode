@@ -8,11 +8,11 @@ const OutfitFont = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Hyper Boosts | #1 Discord Shop",
+  title: "Boostaclaims | #1 Discord Shop",
   description:
-    "Hyper Boosts is a Discord shop that sells high-quality Discord boosts, tools, and more. We offer a wide range of services to help you grow your community. Vincz Boosts is not affiliated or endorsed by Discord in any way.",
+    "Boostaclaims is a Discord shop that sells high-quality Discord Boosts, discord nitro (as cheap as $1.5), and more. We offer a wide range of services to help you grow your community. Boostaclaims is not affiliated or endorsed by Discord in any way.",
   icons: {
-    icon: "logo.png",
+    icon: "boostapfp.png",
   },
 };
 
