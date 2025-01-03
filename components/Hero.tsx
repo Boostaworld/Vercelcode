@@ -55,8 +55,8 @@ const Hero = () => {
                     Premium Discord Services
                   </span>
                   <div className="absolute -right-6 -top-2 h-14 w-14">
-                    <Lottie 
-                      animationData={DiscordNitroLottieAnimation} 
+                    <Lottie
+                      animationData={DiscordNitroLottieAnimation}
                       loop={true}
                       className="transform transition-all duration-300 hover:scale-110"
                     />
@@ -75,10 +75,10 @@ const Hero = () => {
                   </span>
                   <span className="block mt-1">at Discounted Rates!</span>
                 </h1>
-                
+
                 <p className={`mx-auto max-w-xl text-lg text-muted-foreground/90 lg:mx-0 ${fadeUpClass} ${visible} ${delays.description}`}>
-                  Experience lightning-fast delivery and unbeatable prices for Discord 
-                  enhancement services. Our automated platform ensures instant delivery 
+                  Experience lightning-fast delivery and unbeatable prices for Discord
+                  enhancement services. Our automated platform ensures instant delivery
                   with 24/7 customer support.
                 </p>
               </div>
@@ -88,10 +88,11 @@ const Hero = () => {
                 {[
                   'Instant Delivery',
                   '24/7 Support',
-                  'Lowest Price Guarantee'
+                  'Lowest Price Guarantee',
+                  'UHQ Quality Guarantee'
                 ].map((feature, index) => (
-                  <div 
-                    key={feature} 
+                  <div
+                    key={feature}
                     className={`flex items-center gap-2 ${fadeUpClass} ${visible}`}
                     style={{ transitionDelay: `${700 + (index * 100)}ms` }}
                   >
@@ -108,7 +109,7 @@ const Hero = () => {
               {/* CTA Buttons */}
               <div className={`flex flex-col gap-4 sm:flex-row ${fadeUpClass} ${visible} ${delays.buttons}`}>
                 <Link href="/#products">
-                  <Button 
+                  <Button
                     size="lg"
                     className="group relative w-44 overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
                   >
@@ -116,10 +117,10 @@ const Hero = () => {
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                
+
                 <Link href={LINKS.DISCORD}>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     size="lg"
                     className="w-44 border-purple-500/20 bg-gradient-to-r from-purple-500/[0.05] to-pink-500/[0.05] backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-purple-500/30 hover:from-purple-500/10 hover:to-pink-500/10"
                   >
@@ -135,9 +136,10 @@ const Hero = () => {
                   { label: 'Active Users', value: '10K+' },
                   { label: 'Servers Boosted', value: '5K+' },
                   { label: 'Response Time', value: '<1m' },
+                  { label: 'Vouches', value: '500+' }
                 ].map((stat, index) => (
-                  <div 
-                    key={stat.label} 
+                  <div
+                    key={stat.label}
                     className="rounded-lg border border-purple-500/20 bg-gradient-to-r from-purple-500/[0.05] to-pink-500/[0.05] p-4 text-center backdrop-blur-sm transition-all duration-300 hover:border-purple-500/30"
                     style={{ transitionDelay: `${1000 + (index * 100)}ms` }}
                   >
@@ -152,7 +154,7 @@ const Hero = () => {
             <div className={`relative hidden lg:block ${fadeUpClass} ${visible} ${delays.image}`}>
               <div className="relative">
                 <div className="absolute left-1/2 top-1/2 h-[600px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-b from-purple-500/20 via-pink-500/20 to-purple-500/20 blur-3xl" />
-                
+
                 <Image
                   className="relative mx-auto h-auto w-[80%] max-w-[500px] drop-shadow-2xl"
                   alt="Discord mobile interface"

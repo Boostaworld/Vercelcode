@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { 
-  ChevronRight, 
+import {
+  ChevronRight,
   ArrowUp,
   Bitcoin,
   CreditCard,
@@ -46,7 +46,7 @@ const StatsCounter: React.FC<StatsCounterProps> = ({ value, label }) => {
     const steps = 40;
     const stepValue = value / steps;
     let current = 0;
-    
+
     const timer = setInterval(() => {
       current += stepValue;
       if (current >= value) {
@@ -61,7 +61,7 @@ const StatsCounter: React.FC<StatsCounterProps> = ({ value, label }) => {
   }, [value]);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -131,12 +131,12 @@ const ScrollToTop: React.FC = () => {
 
 const NewsletterForm: React.FC = () => {
   const [email, setEmail] = useState<string>('');
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
   };
-  
+
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-2">
       <div className="relative">
@@ -152,8 +152,8 @@ const NewsletterForm: React.FC = () => {
           whileTap={{ scale: 0.98 }}
           className="absolute right-1 top-1"
         >
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-6 py-2 rounded-md transition-all duration-200 shadow-lg hover:shadow-pink-500/25"
           >
             <span className="flex items-center gap-2">
@@ -169,7 +169,7 @@ const NewsletterForm: React.FC = () => {
 
 const Footer: React.FC = () => {
   return (
-    <motion.footer 
+    <motion.footer
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -189,30 +189,30 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <div className="flex flex-col gap-6 max-w-xl">
             <Link href="/" className="inline-flex">
-              <motion.div 
+              <motion.div
                 whileHover={{ scale: 1.1 }}
                 className="flex items-center gap-2"
               >
-                <Image 
-                  src="/logo.png" 
-                  alt="Hyper Boosts" 
-                  width={40} 
-                  height={40} 
+                <Image
+                  src="/boostapfp.png"
+                  alt="Boostaclaims"
+                  width={40}
+                  height={40}
                   className="rounded-lg"
                 />
                 <span className="text-2xl font-bold PoseidonFont bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-                  Hyper Boosts
+                  Boostaclaims
                 </span>
               </motion.div>
             </Link>
-            
+
             <p className="text-brandGray/90 leading-relaxed">
-              Hyper Boosts is a Discord shop that sells high-quality Discord boosts, tools, and more. 
+              Boostaclaims is a Discord shop that sells high-quality Discord boosts, tools, and more.
               We offer a wide range of services to help you grow your community.
             </p>
-            
+
             <p className="text-sm font-medium bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-              Hyper Boosts is not affiliated or endorsed by Discord in any way.
+              Boostaclaims is not affiliated or endorsed by Discord in any way.
             </p>
 
             <div className="mt-4">
@@ -238,11 +238,11 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <nav className="flex flex-col gap-2">
               {LandingPageLinks?.map((link: QuickLink, index: number) => (
-                <Link 
-                  href={link?.link} 
+                <Link
+                  href={link?.link}
                   key={index}
                 >
-                  <motion.div 
+                  <motion.div
                     whileHover={{ x: 10 }}
                     className="group flex items-center gap-2 text-brandGray hover:text-white transition-colors duration-200"
                   >
@@ -259,14 +259,14 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pb-6">
           <p className="text-sm text-brandGray/80">
-            &copy; {new Date().getFullYear()} Hyper Boosts. All rights reserved.
+            &copy; {new Date().getFullYear()} Boostaclaims. All rights reserved.
           </p>
-          
-          <Link 
-            href="https://discord.gg/hyperboosts" 
+
+          <Link
+            href="https://discord.gg/hyperboosts"
             target="_blank"
           >
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.1 }}
               className="group"
             >
