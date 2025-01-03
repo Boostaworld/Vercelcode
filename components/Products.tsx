@@ -60,7 +60,7 @@ const Products = () => {
               </span>
             </h2>
             <p className="mt-4 text-white/70 max-w-2xl mx-auto">
-              Browse our selection of Discord boosting services, 
+              Browse our selection of Discord boosting services,
               each crafted to enhance your Discord experience.
             </p>
           </div>
@@ -76,9 +76,9 @@ const Products = () => {
         <div className="absolute -bottom-10 right-0 w-20 h-20 border-b-2 border-r-2 border-pink-500/20 rounded-br-3xl" />
       </div>
 
-      <Script 
-        src="https://cdn.sellix.io/static/js/embed.js" 
-        strategy="beforeInteractive"
+      <Script
+        src="https://cdn.sellix.io/static/js/embed.js"
+        strategy="afterInteractive"
       />
     </section>
   );

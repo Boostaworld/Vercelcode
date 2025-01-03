@@ -1,5 +1,41 @@
-import React from "react";
+// ./components/Terms.tsx
+import React, { ReactNode } from "react";
 
+// Define a reusable type for components that accept children
+type PropsWithChildren = {
+  children: ReactNode;
+};
+
+// Section Component
+const Section = ({ children }: PropsWithChildren) => (
+  <div className="space-y-6">{children}</div>
+);
+
+// SectionTitle Component
+const SectionTitle = ({ children }: PropsWithChildren) => (
+  <h2 className="text-2xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+    {children}
+  </h2>
+);
+
+// List Component
+const List = ({ children }: PropsWithChildren) => (
+  <div className="space-y-4">{children}</div>
+);
+
+// ListItem Component
+const ListItem = ({ children }: PropsWithChildren) => (
+  <div className="flex gap-4 items-start">
+    <div className="mt-2">
+      <div className="h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500" />
+    </div>
+    <div className="text-muted-foreground/90 leading-relaxed flex-1">
+      {children}
+    </div>
+  </div>
+);
+
+// Main Terms Component
 const Terms = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 pb-24 relative overflow-hidden">
@@ -110,7 +146,7 @@ const Terms = () => {
               No compensation for security compromises
             </ListItem>
             <ListItem>
-              We reserve the right to terminate services; "lifetime" refers to active platform duration
+              We reserve the right to terminate services; &quot;lifetime&quot; refers to active platform duration
             </ListItem>
             <ListItem>
               License resale requires explicit authorization
@@ -147,63 +183,11 @@ const Terms = () => {
         {/* Disclaimer */}
         <Section>
           <p className="text-sm text-muted-foreground/60 italic">
-            Disclaimer: This website is not affiliated with, authorized, maintained, sponsored or endorsed by Discord Inc. (discord.com) or any of its affiliates or subsidiaries.
+            Disclaimer: This website is not affiliated with, authorized, maintained, sponsored or endorsed by Discord Inc. (&quot;discord.com&quot;) or any of its affiliates or subsidiaries.
           </p>
         </Section>
       </div>
     </div>
-  );
-};
-// ./components/Terms.tsx
-import React, { ReactNode } from 'react';
-
-// Define a reusable type for components that accept children
-type PropsWithChildren = {
-  children: ReactNode;
-};
-
-const Section = ({ children }: PropsWithChildren) => (
-  <div className="space-y-6">{children}</div>
-);
-
-const SectionTitle = ({ children }: PropsWithChildren) => (
-  <h2 className="text-2xl font-semibold tracking-tight mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-    {children}
-  </h2>
-);
-
-const List = ({ children }: PropsWithChildren) => (
-  <div className="space-y-4">{children}</div>
-);
-
-const ListItem = ({ children }: PropsWithChildren) => (
-  <div className="flex gap-4 items-start">
-    <div className="mt-2">
-      <div className="h-2 w-2 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500" />
-    </div>
-    <div className="text-muted-foreground/90 leading-relaxed flex-1">
-      {children}
-    </div>
-  </div>
-);
-
-const Terms = () => {
-  return (
-    <Section>
-      <SectionTitle>Terms and Conditions</SectionTitle>
-      <List>
-        <ListItem>
-          By accessing this website, you agree to comply with and be bound by the following terms and conditions.
-        </ListItem>
-        <ListItem>
-          All content provided on this site is for informational purposes only.
-        </ListItem>
-        <ListItem>
-          We reserve the right to modify these terms at any time without prior notice.
-        </ListItem>
-        {/* Add more ListItems as needed */}
-      </List>
-    </Section>
   );
 };
 
