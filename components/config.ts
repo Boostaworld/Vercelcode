@@ -1,12 +1,12 @@
 export const LINKS = {
-  DISCORD: "https://discord.gg/hyperboosts",
+  DISCORD: "https://discord.gg/boostaclaims",
   TELEGRAM: "https://t.me/",
   TWITTER: "https://x.com",
-  TRUSTPILOT: "https://hyperboostss.mysellix.io/feedback",
+  TRUSTPILOT: "https://boostaclaims.mysellix.io/feedback",
 };
 
 export const NOTIFICATION = {
-  showNotification: true,
+  showNotification: false,
   notificationText: "Shop today and use code RELEASE10 for a 10% off!",
   notificationLink: LINKS.DISCORD,
 };
