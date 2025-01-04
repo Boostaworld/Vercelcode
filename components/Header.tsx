@@ -15,7 +15,7 @@ const Header = () => {
       <div className="middle h-[60px] flex items-center justify-between">
         <Link href="/">
           <div className="flex flex-row items-center gap-1">
-            <Image src="/logo.png" alt="Robolox" width={40} height={40} />
+            <Image src="/boostapfp.png" alt="Robolox" width={40} height={40} />
             <span className="text-xl font-bold PoseidonFont">Hyper Boosts</span>
           </div>
         </Link>
@@ -47,13 +47,13 @@ const Header = () => {
             </RevealAnimation>
           ))}
         </div>
-        <Link className="hidden md:flex" href={LINKS.DISCORD} target="_blank">
+        <Link className="hidden md:flex" href={LINKS.DISCORD} target="_blank">{/* Discord Join Button in top right */}
           <Button
             variant={"brand"}
             style={{
               background: 'linear-gradient(90deg, rgb(168, 85, 247) 0%, rgb(236, 72, 153) 100%)',
               color: 'white',
-              transition: 'background 0.3s ease, color 0.3s ease',
+              transition: 'background 0.3s ease, color 0.3s ease',/* time taken for animation */
               padding: '0.375rem 0.875rem',
               borderRadius: '0.375rem',
             }}
